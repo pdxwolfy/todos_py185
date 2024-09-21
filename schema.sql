@@ -8,7 +8,6 @@ CREATE TABLE todos (
     title text NOT NULL,
     completed boolean NOT NULL DEFAULT false,
     list_id integer NOT NULL
-                    ON DELETE CASCADE
                     REFERENCES lists (id)
-
+                    ON DELETE CASCADE
 );
